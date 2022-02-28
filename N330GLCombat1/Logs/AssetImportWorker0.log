@@ -287,3 +287,172 @@ Received Import Request.
 Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_shroom.png using Guid(852836308f4d7498ca88793c606c571f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee45a7da6f03724005b00c560308817') in 0.015649 seconds 
   Import took 0.019462 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 939.425032 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone
+  artifactKey: Guid(a6fb6b694e6d140cbaecf04a2954b23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone using Guid(a6fb6b694e6d140cbaecf04a2954b23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108a8dfc7b9085f6f5712c7882d2ea2') in 0.001281 seconds 
+  Import took 0.005162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.094183 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stone.png
+  artifactKey: Guid(cc1806c0fac154e98a971ab99b387810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stone.png using Guid(cc1806c0fac154e98a971ab99b387810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8130a6a32bedf8c8b3711f5e97ac0d36') in 0.018403 seconds 
+  Import took 0.025275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_right.png
+  artifactKey: Guid(ef75ca5b08d174c2db7a73c196f08bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_right.png using Guid(ef75ca5b08d174c2db7a73c196f08bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095958ee7c0f5ead6c9b01b194b35262') in 0.012194 seconds 
+  Import took 0.015575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_right.png
+  artifactKey: Guid(03629f2aa53bd4cacb84b2a72f3a1c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_right.png using Guid(03629f2aa53bd4cacb84b2a72f3a1c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3621062ed87c263fe33e607c45429f0f') in 0.011724 seconds 
+  Import took 0.015319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf.png
+  artifactKey: Guid(90bf8b6c69ae14e9c982178f9f168112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf.png using Guid(90bf8b6c69ae14e9c982178f9f168112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fad26d5ff7bfc0594fc4747e2ae004a') in 0.014179 seconds 
+  Import took 0.017807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_left.png
+  artifactKey: Guid(4ced41d8bad8a499ca90ddc5e0f39441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_left.png using Guid(4ced41d8bad8a499ca90ddc5e0f39441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bb87656c0a9ab9d5a8396475e8f405') in 0.011779 seconds 
+  Import took 0.015058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_left.png
+  artifactKey: Guid(485c79aa5c6644dd58e70f96f88ccb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_left.png using Guid(485c79aa5c6644dd58e70f96f88ccb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b02aa782987906a0bbe43ac69c94ef') in 0.011865 seconds 
+  Import took 0.015069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter.png
+  artifactKey: Guid(40d5f7322ba0240f0bc1b6d41b6c78a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter.png using Guid(40d5f7322ba0240f0bc1b6d41b6c78a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a48bf8a8a651fa1178ddef615962209') in 0.017410 seconds 
+  Import took 0.020212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneLeft.png
+  artifactKey: Guid(bafe8725fc00a4c05a5f3bffd3c363f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneLeft.png using Guid(bafe8725fc00a4c05a5f3bffd3c363f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7774037885f78c64930f73debddd8f19') in 0.011902 seconds 
+  Import took 0.015052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneRight.png
+  artifactKey: Guid(ad35e38b104214ab7bbb2d79eedc4b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneRight.png using Guid(ad35e38b104214ab7bbb2d79eedc4b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9746aca67ab87e92802f972d7afb9780') in 0.011486 seconds 
+  Import took 0.014495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_left.png
+  artifactKey: Guid(e33c916bffbcc4bfdae3fd3b5190e29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_left.png using Guid(e33c916bffbcc4bfdae3fd3b5190e29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98129d3fb7a14bf7781456cb1283b835') in 0.011742 seconds 
+  Import took 0.015859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_right.png
+  artifactKey: Guid(fdda23a7b75fc4ee1a2bb0cd5fd1412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_right.png using Guid(fdda23a7b75fc4ee1a2bb0cd5fd1412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2120256c978989d5459d19026d0ae97b') in 0.011577 seconds 
+  Import took 0.014802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_mid.png
+  artifactKey: Guid(2191c1dc44b5d4426b6a007eaa9a810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_mid.png using Guid(2191c1dc44b5d4426b6a007eaa9a810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8baee37eb2ce9c0d62ed1ca321bbcc7') in 0.013184 seconds 
+  Import took 0.016671 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_left.png
+  artifactKey: Guid(dc099206480344ccf90cc7e1c529bbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_left.png using Guid(dc099206480344ccf90cc7e1c529bbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a82e80d87d9ca4f2dfd03b9e7189ffa') in 0.018556 seconds 
+  Import took 0.023715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter_rounded.png
+  artifactKey: Guid(deac5855536ca4627a4ac134ee73fd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter_rounded.png using Guid(deac5855536ca4627a4ac134ee73fd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0821b2721ac2dd3515a812ce878e8b4') in 0.012094 seconds 
+  Import took 0.015777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_right.png
+  artifactKey: Guid(ac13734a3ca7949e19ba2a3d6bd74e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_right.png using Guid(ac13734a3ca7949e19ba2a3d6bd74e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205aab422572194749f817186e58d36f') in 0.014299 seconds 
+  Import took 0.017491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_left.png
+  artifactKey: Guid(e151349b9cf9d42b292935ded6f5afff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_left.png using Guid(e151349b9cf9d42b292935ded6f5afff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3284f68c97c37c63f89bb2070d358111') in 0.015977 seconds 
+  Import took 0.019214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneMid.png
+  artifactKey: Guid(6923f725a705443b687022d21531e7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneMid.png using Guid(6923f725a705443b687022d21531e7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53108c71a7d0c66db4e09acb6cdd5e21') in 0.017086 seconds 
+  Import took 0.022230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_right.png
+  artifactKey: Guid(fdacac4763b5d4e39a2586586ea14cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_right.png using Guid(fdacac4763b5d4e39a2586586ea14cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74756a6a3cf6b9219d35a419c0e5d04d') in 0.015281 seconds 
+  Import took 0.020533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.705767 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(c77c1993df19342c4b2414e4a09701d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(c77c1993df19342c4b2414e4a09701d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c9f99054b7a43c4c362d12edafd738') in 0.002048 seconds 
+  Import took 0.006113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 129.504227 seconds.
+  path: Assets/Prefabs/Platform.prefab
+  artifactKey: Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Platform.prefab using Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95791351e59b508d2036c26348e6c97') in 0.924723 seconds 
+  Import took 0.931436 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
