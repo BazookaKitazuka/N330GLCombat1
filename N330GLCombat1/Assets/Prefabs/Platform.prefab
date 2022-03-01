@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4561322545598014089}
   - component: {fileID: 3813024051418823804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2736096521344066376}
   - component: {fileID: 5401857546887219958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stoneCliff_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 777395473296579816}
   - component: {fileID: 557205653298177930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stoneCliff_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7408067105798785137}
   - component: {fileID: 5410326778198132447}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
