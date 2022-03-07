@@ -22,104 +22,104 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57774
+58906
 Successfully changed project path to: /Users/brunokitazuka/Desktop/Documents - Bruno’s MacBook Pro copy/School/Semester 4/Intermediate Game Design/N330GLCombat1/N330GLCombat1
 /Users/brunokitazuka/Desktop/Documents - Bruno’s MacBook Pro copy/School/Semester 4/Intermediate Game Design/N330GLCombat1/N330GLCombat1
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 46.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/brunokitazuka/Desktop/Documents - Bruno’s MacBook Pro copy/School/Semester 4/Intermediate Game Design/N330GLCombat1/N330GLCombat1/Assets
 GfxDevice: creating device client; threaded=0
-2022-02-28 13:20:21.190 Unity[53562:4740763] Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
-2022-02-28 13:20:21.190 Unity[53562:4740763] Metal devices available: 2
-2022-02-28 13:20:21.190 Unity[53562:4740763] 0: AMD Radeon Pro 5300M (high power)
-2022-02-28 13:20:21.190 Unity[53562:4740763] 1: Intel(R) UHD Graphics 630 (low power)
-2022-02-28 13:20:21.190 Unity[53562:4740763] Using device AMD Radeon Pro 5300M (high power)
+2022-02-28 13:54:11.733 Unity[55089:4775129] Color LCD preferred device: Intel(R) UHD Graphics 630 (low power)
+2022-02-28 13:54:11.733 Unity[55089:4775129] Metal devices available: 2
+2022-02-28 13:54:11.733 Unity[55089:4775129] 0: AMD Radeon Pro 5300M (high power)
+2022-02-28 13:54:11.733 Unity[55089:4775129] 1: Intel(R) UHD Graphics 630 (low power)
+2022-02-28 13:54:11.734 Unity[55089:4775129] Using device AMD Radeon Pro 5300M (high power)
 Initializing Metal device caps: AMD Radeon Pro 5300M
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56562
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56089
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.26f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.002233 seconds.
+Registered in 0.003423 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 44.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 51.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.669 seconds
+- Completed reload, in  0.700 seconds
 Domain Reload Profiling:
-	ReloadAssembly (670ms)
-		BeginReloadAssembly (46ms)
+	ReloadAssembly (700ms)
+		BeginReloadAssembly (41ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (541ms)
-			LoadAssemblies (47ms)
+		EndReloadAssembly (575ms)
+			LoadAssemblies (43ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (200ms)
+			SetupTypeCache (210ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (199ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (228ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (44ms)
-				BeforeProcessingInitializeOnLoad (9ms)
-				ProcessInitializeOnLoadAttributes (106ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
+				RefreshPlugins (52ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007081 seconds.
+Registered in 0.008438 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 50.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 45.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.895 seconds
+- Completed reload, in  1.343 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1896ms)
-		BeginReloadAssembly (172ms)
+	ReloadAssembly (1344ms)
+		BeginReloadAssembly (168ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1654ms)
-			LoadAssemblies (109ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (1094ms)
+			LoadAssemblies (113ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (390ms)
+			SetupTypeCache (400ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (928ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (350ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (50ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (624ms)
-				ProcessInitializeOnLoadMethodAttributes (130ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (1ms)
+				RefreshPlugins (46ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.000301 seconds.
+Validating Project structure ... 0.004676 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.000389 seconds.
+Upgrading shader files ...0.005156 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -133,14 +133,14 @@ Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Initializing Unity extensions:
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 195.8 MB.
+System memory in use before: 195.9 MB.
 System memory in use after: 195.1 MB.
 
-Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 2670.
-Total: 3.887535 ms (FindLiveObjects: 0.193320 ms CreateObjectMapping: 0.101190 ms MarkObjects: 3.084568 ms  DeleteObjects: 0.507388 ms)
+Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 2671.
+Total: 3.712471 ms (FindLiveObjects: 0.172235 ms CreateObjectMapping: 0.092049 ms MarkObjects: 2.963858 ms  DeleteObjects: 0.483502 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -154,305 +154,17 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Terrain
-  artifactKey: Guid(0d0704f9d7b504363a7bf19d8a4c342f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain using Guid(0d0704f9d7b504363a7bf19d8a4c342f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978ef14ae75326335ae37975c014666c') in 0.004981 seconds 
-  Import took 0.008707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.706116 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets
-  artifactKey: Guid(f168a0c18700349cda6eba2d0c751331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets using Guid(f168a0c18700349cda6eba2d0c751331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bca8016c6fe2567b7601ab6e8333f46') in 0.001263 seconds 
-  Import took 0.005354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.980710 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/Changes.png
-  artifactKey: Guid(d4291ed66dd1947af921e29017c957f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/Changes.png using Guid(d4291ed66dd1947af921e29017c957f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1577a1eb918c41b1fd43d5f37ff558a8') in 0.849878 seconds 
-  Import took 0.859090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/Sample2.png
-  artifactKey: Guid(ad082eeb1cc8e4d3e9375f91840a4612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/Sample2.png using Guid(ad082eeb1cc8e4d3e9375f91840a4612) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa8562eea74b37e12524c1e08ad13a1') in 0.022843 seconds 
-  Import took 0.025970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/Sample1.png
-  artifactKey: Guid(9df291a9912174ca2a62ef60576b4c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/Sample1.png using Guid(9df291a9912174ca2a62ef60576b4c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bbb103cb79d3034f006e8711b6763f2') in 0.015953 seconds 
-  Import took 0.021953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/Preview2.png
-  artifactKey: Guid(c2a1d548eabe8416680d1b7a73f28a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/Preview2.png using Guid(c2a1d548eabe8416680d1b7a73f28a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6aa262569b9e0155ce87a2a9bd8aedf') in 0.017485 seconds 
-  Import took 0.021451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/Preview1.png
-  artifactKey: Guid(61cd47dbdb73543c2a4ab475255ee22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/Preview1.png using Guid(61cd47dbdb73543c2a4ab475255ee22e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7666643ac2ecef8e3e61e34b5bef76') in 0.016670 seconds 
-  Import took 0.020260 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.848823 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG
-  artifactKey: Guid(4e62cceb6e47f451b8d4da3eb9d4ea9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG using Guid(4e62cceb6e47f451b8d4da3eb9d4ea9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d8ef6b57a7f99657b7e571011a6e37') in 0.001231 seconds 
-  Import took 0.004683 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.547770 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds
-  artifactKey: Guid(b4c0c7c300f3d4b01a5e3f52b1f1550d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds using Guid(b4c0c7c300f3d4b01a5e3f52b1f1550d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77dbf2c33ddbd70605554e8cc62be14') in 0.001129 seconds 
-  Import took 0.004911 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.132198 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_desert.png
-  artifactKey: Guid(f2a1acf92ff1c46eaaad062d3998ff8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_desert.png using Guid(f2a1acf92ff1c46eaaad062d3998ff8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8a193743730f5de1fb796d280eea06') in 0.023434 seconds 
-  Import took 0.027184 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_shroom.png
-  artifactKey: Guid(5366dd7ec3174498286f92ca33c6fd0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_shroom.png using Guid(5366dd7ec3174498286f92ca33c6fd0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674b9c4510943fcf5bd65c6b6149f00d') in 0.018924 seconds 
-  Import took 0.023378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_grass.png
-  artifactKey: Guid(63aa6bdcf1b854214a1238cb78732819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_grass.png using Guid(63aa6bdcf1b854214a1238cb78732819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805e73d2aa9ebac2ef34b8499c729789') in 0.015127 seconds 
-  Import took 0.023393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000917 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_desert.png
-  artifactKey: Guid(b079d7326325747ff9c2246942193cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_desert.png using Guid(b079d7326325747ff9c2246942193cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929e566219d18f7aef3af4fa02ffcc3d') in 0.019969 seconds 
-  Import took 0.025298 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_land.png
-  artifactKey: Guid(4e5b2fa88270b4cec931bc62c28dad5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_land.png using Guid(4e5b2fa88270b4cec931bc62c28dad5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67be260cf46b8deda29b7bf82e38f9a6') in 0.016741 seconds 
-  Import took 0.021555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_grass.png
-  artifactKey: Guid(1cc3abcf081644918a2263dc1563d3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_grass.png using Guid(1cc3abcf081644918a2263dc1563d3cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13886b74d2e61d1da529c48f36417a7f') in 0.018027 seconds 
-  Import took 0.022380 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_land.png
-  artifactKey: Guid(85e26f68d7ae64a07922092fe5b1dbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/colored_land.png using Guid(85e26f68d7ae64a07922092fe5b1dbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6807948bfb44fd32678c412a40996c') in 0.015534 seconds 
-  Import took 0.019085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_shroom.png
-  artifactKey: Guid(852836308f4d7498ca88793c606c571f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Backgrounds/blue_shroom.png using Guid(852836308f4d7498ca88793c606c571f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee45a7da6f03724005b00c560308817') in 0.015649 seconds 
-  Import took 0.019462 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 939.425032 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone
-  artifactKey: Guid(a6fb6b694e6d140cbaecf04a2954b23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone using Guid(a6fb6b694e6d140cbaecf04a2954b23e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108a8dfc7b9085f6f5712c7882d2ea2') in 0.001281 seconds 
-  Import took 0.005162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.094183 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stone.png
-  artifactKey: Guid(cc1806c0fac154e98a971ab99b387810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stone.png using Guid(cc1806c0fac154e98a971ab99b387810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8130a6a32bedf8c8b3711f5e97ac0d36') in 0.018403 seconds 
-  Import took 0.025275 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_right.png
-  artifactKey: Guid(ef75ca5b08d174c2db7a73c196f08bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_right.png using Guid(ef75ca5b08d174c2db7a73c196f08bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095958ee7c0f5ead6c9b01b194b35262') in 0.012194 seconds 
-  Import took 0.015575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_right.png
-  artifactKey: Guid(03629f2aa53bd4cacb84b2a72f3a1c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_right.png using Guid(03629f2aa53bd4cacb84b2a72f3a1c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3621062ed87c263fe33e607c45429f0f') in 0.011724 seconds 
-  Import took 0.015319 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf.png
-  artifactKey: Guid(90bf8b6c69ae14e9c982178f9f168112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf.png using Guid(90bf8b6c69ae14e9c982178f9f168112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fad26d5ff7bfc0594fc4747e2ae004a') in 0.014179 seconds 
-  Import took 0.017807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_left.png
-  artifactKey: Guid(4ced41d8bad8a499ca90ddc5e0f39441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_left.png using Guid(4ced41d8bad8a499ca90ddc5e0f39441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bb87656c0a9ab9d5a8396475e8f405') in 0.011779 seconds 
-  Import took 0.015058 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_left.png
-  artifactKey: Guid(485c79aa5c6644dd58e70f96f88ccb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_left.png using Guid(485c79aa5c6644dd58e70f96f88ccb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b02aa782987906a0bbe43ac69c94ef') in 0.011865 seconds 
-  Import took 0.015069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter.png
-  artifactKey: Guid(40d5f7322ba0240f0bc1b6d41b6c78a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter.png using Guid(40d5f7322ba0240f0bc1b6d41b6c78a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a48bf8a8a651fa1178ddef615962209') in 0.017410 seconds 
-  Import took 0.020212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneLeft.png
-  artifactKey: Guid(bafe8725fc00a4c05a5f3bffd3c363f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneLeft.png using Guid(bafe8725fc00a4c05a5f3bffd3c363f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7774037885f78c64930f73debddd8f19') in 0.011902 seconds 
-  Import took 0.015052 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneRight.png
-  artifactKey: Guid(ad35e38b104214ab7bbb2d79eedc4b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneRight.png using Guid(ad35e38b104214ab7bbb2d79eedc4b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9746aca67ab87e92802f972d7afb9780') in 0.011486 seconds 
-  Import took 0.014495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_left.png
-  artifactKey: Guid(e33c916bffbcc4bfdae3fd3b5190e29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliffAlt_left.png using Guid(e33c916bffbcc4bfdae3fd3b5190e29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98129d3fb7a14bf7781456cb1283b835') in 0.011742 seconds 
-  Import took 0.015859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_right.png
-  artifactKey: Guid(fdda23a7b75fc4ee1a2bb0cd5fd1412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_right.png using Guid(fdda23a7b75fc4ee1a2bb0cd5fd1412b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2120256c978989d5459d19026d0ae97b') in 0.011577 seconds 
-  Import took 0.014802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_mid.png
-  artifactKey: Guid(2191c1dc44b5d4426b6a007eaa9a810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHalf_mid.png using Guid(2191c1dc44b5d4426b6a007eaa9a810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8baee37eb2ce9c0d62ed1ca321bbcc7') in 0.013184 seconds 
-  Import took 0.016671 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_left.png
-  artifactKey: Guid(dc099206480344ccf90cc7e1c529bbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCliff_left.png using Guid(dc099206480344ccf90cc7e1c529bbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a82e80d87d9ca4f2dfd03b9e7189ffa') in 0.018556 seconds 
-  Import took 0.023715 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter_rounded.png
-  artifactKey: Guid(deac5855536ca4627a4ac134ee73fd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCenter_rounded.png using Guid(deac5855536ca4627a4ac134ee73fd5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0821b2721ac2dd3515a812ce878e8b4') in 0.012094 seconds 
-  Import took 0.015777 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_right.png
-  artifactKey: Guid(ac13734a3ca7949e19ba2a3d6bd74e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_right.png using Guid(ac13734a3ca7949e19ba2a3d6bd74e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205aab422572194749f817186e58d36f') in 0.014299 seconds 
-  Import took 0.017491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_left.png
-  artifactKey: Guid(e151349b9cf9d42b292935ded6f5afff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneCorner_left.png using Guid(e151349b9cf9d42b292935ded6f5afff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3284f68c97c37c63f89bb2070d358111') in 0.015977 seconds 
-  Import took 0.019214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneMid.png
-  artifactKey: Guid(6923f725a705443b687022d21531e7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneMid.png using Guid(6923f725a705443b687022d21531e7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53108c71a7d0c66db4e09acb6cdd5e21') in 0.017086 seconds 
-  Import took 0.022230 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_right.png
-  artifactKey: Guid(fdacac4763b5d4e39a2586586ea14cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Terrain/platformer-pack-redux-360-assets/PNG/Ground/Stone/stoneHill_right.png using Guid(fdacac4763b5d4e39a2586586ea14cb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74756a6a3cf6b9219d35a419c0e5d04d') in 0.015281 seconds 
-  Import took 0.020533 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 163.705767 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(c77c1993df19342c4b2414e4a09701d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(c77c1993df19342c4b2414e4a09701d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c9f99054b7a43c4c362d12edafd738') in 0.002048 seconds 
-  Import took 0.006113 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 129.504227 seconds.
   path: Assets/Prefabs/Platform.prefab
   artifactKey: Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Platform.prefab using Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95791351e59b508d2036c26348e6c97') in 0.924723 seconds 
-  Import took 0.931436 seconds .
+Start importing Assets/Prefabs/Platform.prefab using Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5365aaf16ad965d5375352ce4d2343') in 1.642553 seconds 
+  Import took 1.649819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.350825 seconds.
+  path: Assets/Prefabs/Platform.prefab
+  artifactKey: Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Platform.prefab using Guid(d48641903f7c445fe817158456e5186b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea0bceeab38156628dc87f8e92f4a28') in 0.018552 seconds 
+  Import took 0.023190 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
