@@ -1,42 +1,74 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
-    public float speed;
-    public float jumpForce;
-    private Rigidbody2D rb;
+
+   
+    // Start is called before the first frame update
+    PlayerController controls;
+    float direction = 0;
+    public float speed = 400;
+    public bool isFacingRight = true;
+
+    public float jumpForce = 5;
+    bool isGrounded;
+    int numberOfJumps = 0;
     public Transform groundCheck;
     public LayerMask groundLayer;
-    // Start is called before the first frame update
-    void Start()
+
+    public Rigidbody2D playerRB;
+    
+
+    private void Awake()
     {
-        rb = this.GetComponent<Rigidbody2D>();
-        
+        controls = new PlayerController();
+        controls.Enable();
+
+        controls.Player.Movement.performed += context =>
+        {
+            direction = context.ReadValue<float>();
+        };
+
+        controls.Player.Jump.performed += context => Jump();
 
     }
-
-    // Update is called once per frame
-    void Update()
+    // chackes if player is on ground and the direction they are facing.
+    void FixedUpdate()
     {
-        Vector2 movementVector = new Vector2();
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+       
 
-        movementVector.x = Input.GetAxis("Horizontal") * speed;
+        playerRB.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, playerRB.velocity.y);
 
-        bool grounded = Physics2D.OverlapCircle(groundCheck.position, .4f, groundLayer) != null;
-
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (isFacingRight && direction < 0 || !isFacingRight && direction > 0)
+            Flip();
+    }
+    // Changes player direction
+    void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+    }
+    // makes player jump
+    void Jump()
+    {
+        if (isGrounded)
         {
-            movementVector.y = jumpForce;
+            numberOfJumps = 0;
+            playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
+            numberOfJumps++;   
         }
+    }
 
-        if(movementVector.x < 0) {
-            this.gameObject.transform.localScale = new Vector3(-0.2f, 0.2f, 1f);
-        }else {
-            this.gameObject.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
-        }
-
-        rb.AddForce(movementVector);
+    private void OnEnable()
+    {
+        controls.Enable();
+    }
+    private void OnDisable()
+    {
+        controls.Disable();
     }
 }

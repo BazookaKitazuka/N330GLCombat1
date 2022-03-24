@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246829680487381134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.43, z: 0}
+  m_LocalPosition: {x: 0, y: -6.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1246829680898296242}
@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1246829680898296244}
   - component: {fileID: 1246829680898296243}
   - component: {fileID: 1246829680898296245}
+  - component: {fileID: 694756588}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -162,7 +163,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1246829680898296245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,9 +176,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc130fa91799dc4a9e78aa827675e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 450
+  speed: 400
+  isFacingRight: 1
+  jumpForce: 10
   groundCheck: {fileID: 1246829680487381135}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  playerRB: {fileID: 1246829680898296243}
+--- !u!114 &694756588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246829680898296240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: fb1d48df3892d2e41b31af331d6e0143, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5f7e126d-04aa-4b0a-8590-726309a1e83b
+    m_ActionName: Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 296a9794-c71b-4a4c-bf8c-07b940f01de9
+    m_ActionName: Player/Jump[/Keyboard/space]
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Keyboard
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
