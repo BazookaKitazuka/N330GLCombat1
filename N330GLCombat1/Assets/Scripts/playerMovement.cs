@@ -31,6 +31,12 @@ public class playerMovement : MonoBehaviour
             movementVector.y = jumpForce;
         }
 
+        if(movementVector.x < 0) {
+            this.gameObject.transform.localScale = new Vector3(-0.2f, 0.2f, 1f);
+        }else {
+            this.gameObject.transform.localScale = new Vector3(0.2f, 0.2f, 1f);
+        }
+
         rb.AddForce(movementVector);
     }
 }
