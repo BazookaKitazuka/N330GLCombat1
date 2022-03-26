@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class playerMovement : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
 
-   
+
     // Start is called before the first frame update
     PlayerController controls;
     float direction = 0;
@@ -20,25 +20,26 @@ public class playerMovement : MonoBehaviour
     public LayerMask groundLayer;
 
     public Rigidbody2D playerRB;
-    
+
 
     private void Awake()
     {
         controls = new PlayerController();
         controls.Enable();
 
-        controls.Player.Movement.performed += context =>
+
+        controls.Player2.Movement.performed += context =>
         {
             direction = context.ReadValue<float>();
         };
 
-        controls.Player.Jump.performed += context => Jump();
+        controls.Player2.Jump.performed += context => Jump();
     }
     // chackes if player is on ground and the direction they are facing.
     void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
-       
+
 
         playerRB.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, playerRB.velocity.y);
 
@@ -58,7 +59,7 @@ public class playerMovement : MonoBehaviour
         {
             numberOfJumps = 0;
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
-            numberOfJumps++;   
+            numberOfJumps++;
         }
     }
 

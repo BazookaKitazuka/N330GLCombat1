@@ -42,7 +42,8 @@ GameObject:
   - component: {fileID: 4184052199869869123}
   - component: {fileID: 4742054391105007073}
   - component: {fileID: 2314878306632135869}
-  - component: {fileID: 2714997322329207007}
+  - component: {fileID: 6241725586342812696}
+  - component: {fileID: 8989112871174524738}
   m_Layer: 0
   m_Name: player2
   m_TagString: Untagged
@@ -163,7 +164,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2714997322329207007
+--- !u!114 &6241725586342812696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,12 +173,60 @@ MonoBehaviour:
   m_GameObject: {fileID: 7072898488244045210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cc130fa91799dc4a9e78aa827675e84, type: 3}
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 450
+  m_Actions: {fileID: -944628639613478452, guid: fb1d48df3892d2e41b31af331d6e0143, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5f7e126d-04aa-4b0a-8590-726309a1e83b
+    m_ActionName: Player/Movement[/Keyboard/a,/Keyboard/d,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 296a9794-c71b-4a4c-bf8c-07b940f01de9
+    m_ActionName: Player/Jump[/Keyboard/space,/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e3509255-a63b-44a3-8a5e-20ccc7622033
+    m_ActionName: Player2/Movement[/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1ff4b867-2371-48dd-bb55-7ac79ebcf4c9
+    m_ActionName: Player2/Jump[/Keyboard/upArrow]
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Keyboard2
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &8989112871174524738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072898488244045210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113ee790e6ba0d64f8433fc7b6d301bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 400
+  isFacingRight: 1
+  jumpForce: 5
   groundCheck: {fileID: 6974693650752226661}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  playerRB: {fileID: 2314878306632135869}
