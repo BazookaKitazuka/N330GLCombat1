@@ -20,10 +20,15 @@ public class playerMovement : MonoBehaviour
     public LayerMask groundLayer;
 
     public Rigidbody2D playerRB;
-    
+
+    public int maxHealth = 100;
+    public int  currentHealth;
+    public HealthBar healthBar;
 
     private void Awake()
+    
     {
+        // player 1 controlls3
         controls = new PlayerController();
         controls.Enable();
 
@@ -33,6 +38,9 @@ public class playerMovement : MonoBehaviour
         };
 
         controls.Player.Jump.performed += context => Jump();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+
     }
     // chackes if player is on ground and the direction they are facing.
     void FixedUpdate()
@@ -61,7 +69,14 @@ public class playerMovement : MonoBehaviour
             numberOfJumps++;   
         }
     }
+    // checks if player has taken damage
+    void TakeDamage(int damage)
+    {
 
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
+   
     private void OnEnable()
     {
         controls.Enable();

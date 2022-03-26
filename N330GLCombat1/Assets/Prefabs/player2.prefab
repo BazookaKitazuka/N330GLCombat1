@@ -222,11 +222,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113ee790e6ba0d64f8433fc7b6d301bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 400
-  isFacingRight: 1
-  jumpForce: 5
+  speed: 150
+  isFacingLeft: 1
+  jumpForce: 10
   groundCheck: {fileID: 6974693650752226661}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   playerRB: {fileID: 2314878306632135869}
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}

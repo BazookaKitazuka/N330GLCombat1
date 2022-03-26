@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc130fa91799dc4a9e78aa827675e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 100
   isFacingRight: 1
   jumpForce: 10
   groundCheck: {fileID: 6983746982516541878}
@@ -184,6 +184,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   playerRB: {fileID: 5362332427951978817}
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!114 &4488171815784567589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +220,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 296a9794-c71b-4a4c-bf8c-07b940f01de9
     m_ActionName: Player/Jump[/Keyboard/space,/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e3509255-a63b-44a3-8a5e-20ccc7622033
+    m_ActionName: Player2/Movement[/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1ff4b867-2371-48dd-bb55-7ac79ebcf4c9
+    m_ActionName: Player2/Jump[/Keyboard/upArrow]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player
