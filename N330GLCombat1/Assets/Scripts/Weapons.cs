@@ -7,21 +7,38 @@ public class Weapons : MonoBehaviour
     public float moveSpeed = 0.05f;
     public float timeout = 5f;
     // Start is called before the first frame update
+    public List<GameObject> prefabsToSpawn;
+    private bool spawn = true;
+     
+    // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Timeout());
+        StartCoroutine(SpawnWeapons());
     }
 
-    // This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
-    void FixedUpdate()
+    IEnumerator SpawnWeapons()
     {
-        transform.Translate(0, -moveSpeed, 0);
-    }
+        while (true)
+        {
+            float randomTime = Random.Range(5f, 10f);
+            float randomPosition = Random.Range(1f, 10f);
+            int randomPrefab = Random.Range(0, prefabsToSpawn.Count);
 
-    IEnumerator Timeout()
-    {
-        yield return new WaitForSeconds(timeout);
-        Destroy(this.gameObject);
+            yield return new WaitForSeconds(randomTime);
+            if (spawn == true)
+            {
+                Instantiate(prefabsToSpawn[randomPrefab], new Vector2(randomPosition, 10f), Quaternion.identity);
+            }
+            else
+            {
+                int noSpawn = Random.RandomRange(0, 2);
+                    if(noSpawn == 0)
+                {
+                    Instantiate(prefabsToSpawn[randomPrefab], new Vector2(randomPosition, 10f), Quaternion.identity);
+                }
+            }
+        }
+       
     }
 
 }

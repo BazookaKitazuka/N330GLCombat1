@@ -44,6 +44,24 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pickup"",
+                    ""type"": ""Button"",
+                    ""id"": ""9721089b-8a92-442c-abb4-e0acd9df01a8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""de4ffc16-d4b3-4565-9380-ee94a4c985cd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -90,6 +108,28 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""01c5f11b-7314-426d-9431-93ab09432839"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Pickup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d707fcb4-e925-4bca-bb20-a224ef9f4274"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -110,6 +150,24 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""1ff4b867-2371-48dd-bb55-7ac79ebcf4c9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pickup"",
+                    ""type"": ""Button"",
+                    ""id"": ""e84189fd-d791-4601-94df-3f0db1718bfd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""5d1b5d41-7c02-495d-aeba-860e50f109c3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -160,6 +218,28 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a9a90005-b142-4b30-88ad-84f8ca9cd734"",
+                    ""path"": ""<Keyboard>/slash"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard2"",
+                    ""action"": ""Pickup"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""18029ed4-cf3f-438c-902f-73fc3b82fbfc"",
+                    ""path"": ""<Keyboard>/period"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -193,10 +273,14 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_Pickup = m_Player.FindAction("Pickup", throwIfNotFound: true);
+        m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Movement = m_Player2.FindAction("Movement", throwIfNotFound: true);
         m_Player2_Jump = m_Player2.FindAction("Jump", throwIfNotFound: true);
+        m_Player2_Pickup = m_Player2.FindAction("Pickup", throwIfNotFound: true);
+        m_Player2_Attack = m_Player2.FindAction("Attack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -258,12 +342,16 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_Pickup;
+    private readonly InputAction m_Player_Attack;
     public struct PlayerActions
     {
         private @PlayerController m_Wrapper;
         public PlayerActions(@PlayerController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @Pickup => m_Wrapper.m_Player_Pickup;
+        public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -279,6 +367,12 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Pickup.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPickup;
+                @Pickup.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPickup;
+                @Pickup.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPickup;
+                @Attack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                @Attack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
+                @Attack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAttack;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -289,6 +383,12 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Pickup.started += instance.OnPickup;
+                @Pickup.performed += instance.OnPickup;
+                @Pickup.canceled += instance.OnPickup;
+                @Attack.started += instance.OnAttack;
+                @Attack.performed += instance.OnAttack;
+                @Attack.canceled += instance.OnAttack;
             }
         }
     }
@@ -299,12 +399,16 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
     private IPlayer2Actions m_Player2ActionsCallbackInterface;
     private readonly InputAction m_Player2_Movement;
     private readonly InputAction m_Player2_Jump;
+    private readonly InputAction m_Player2_Pickup;
+    private readonly InputAction m_Player2_Attack;
     public struct Player2Actions
     {
         private @PlayerController m_Wrapper;
         public Player2Actions(@PlayerController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player2_Movement;
         public InputAction @Jump => m_Wrapper.m_Player2_Jump;
+        public InputAction @Pickup => m_Wrapper.m_Player2_Pickup;
+        public InputAction @Attack => m_Wrapper.m_Player2_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Player2; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -320,6 +424,12 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                 @Jump.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnJump;
+                @Pickup.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPickup;
+                @Pickup.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPickup;
+                @Pickup.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnPickup;
+                @Attack.started -= m_Wrapper.m_Player2ActionsCallbackInterface.OnAttack;
+                @Attack.performed -= m_Wrapper.m_Player2ActionsCallbackInterface.OnAttack;
+                @Attack.canceled -= m_Wrapper.m_Player2ActionsCallbackInterface.OnAttack;
             }
             m_Wrapper.m_Player2ActionsCallbackInterface = instance;
             if (instance != null)
@@ -330,6 +440,12 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Pickup.started += instance.OnPickup;
+                @Pickup.performed += instance.OnPickup;
+                @Pickup.canceled += instance.OnPickup;
+                @Attack.started += instance.OnAttack;
+                @Attack.performed += instance.OnAttack;
+                @Attack.canceled += instance.OnAttack;
             }
         }
     }
@@ -356,10 +472,14 @@ public partial class @PlayerController : IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnPickup(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnPickup(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
 }

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &697076210168522646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3471863190616579801}
+  m_Layer: 0
+  m_Name: groundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3471863190616579801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697076210168522646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13, y: -1, z: 0}
+  m_LocalScale: {x: 1.0948106, y: 1.038961, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6203777137737330583}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6203777137737330569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +42,7 @@ GameObject:
   - component: {fileID: 6203777137737330568}
   - component: {fileID: 797312183140058638}
   - component: {fileID: 164996679451571340}
-  - component: {fileID: 226875063893701788}
+  - component: {fileID: 943498236623481290}
   m_Layer: 0
   m_Name: SSWeapon
   m_TagString: Untagged
@@ -29,8 +59,9 @@ Transform:
   m_GameObject: {fileID: 6203777137737330569}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.23, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_LocalScale: {x: 0.9134, y: 0.9625, z: 1}
+  m_Children:
+  - {fileID: 3471863190616579801}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -104,7 +135,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &164996679451571340
 BoxCollider2D:
@@ -116,7 +147,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.02730167, y: 0}
@@ -132,7 +163,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.93569636, y: 2.09}
   m_EdgeRadius: 0
---- !u!114 &226875063893701788
+--- !u!114 &943498236623481290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,8 +172,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6203777137737330569}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71a18de0478ec44c839cce6a462664f, type: 3}
+  m_Script: {fileID: 11500000, guid: 138e830bd8ce927468bf1cf1629d7bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.05
-  timeout: 5
+  timeout: 2
+  groundCheck: {fileID: 3471863190616579801}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
