@@ -21,9 +21,9 @@ public class ColorChanger : MonoBehaviour
     IEnumerator color()
     {
         // random time interval on color green
-        float switchGreen = Random.RandomRange(5f, 10f);
+        float switchGreen = Random.Range(5f, 10f);
         // random time interval on color red
-        float switchRed = Random.RandomRange(1f, 5f);
+        float switchRed = Random.Range(1f, 5f);
         // repeat the  background color change
         while (repeat == true){
             // change color from green to yellow

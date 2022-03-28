@@ -6,27 +6,28 @@ public class Weapon : MonoBehaviour
 {
    
     public float moveSpeed = 0.05f;
-    public float timeout = 5f;
+    public int timeout = 10;
     public Transform groundCheck;
     public LayerMask groundLayer;
     bool isGrounded;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Timeout());
+        StartCoroutine(Destroy());
     }
-
-    // This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
-    void FixedUpdate()
+   
+    private void FixedUpdate()
     {
-        transform.Translate(0, -moveSpeed, 0);
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 4f, groundLayer);
     }
-
-    IEnumerator Timeout()
+    IEnumerator Destroy()
     {
-        yield return new WaitForSeconds(timeout);
-        Destroy(this.gameObject);
-    }
+       
+        if (isGrounded)
+        {
+            yield return new WaitForSeconds(1);
 
+            Destroy(this.gameObject);
+        }
+    }
 }
