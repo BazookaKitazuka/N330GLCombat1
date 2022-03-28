@@ -1538,6 +1538,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753650475}
   m_CullTransparentMesh: 1
+--- !u!1 &1876828188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5648281067061773333, guid: 75f8a9d9f8a1444cf95ab0ea30dc360e, type: 3}
+  m_PrefabInstance: {fileID: 1312485600}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1876828189
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876828188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61e4bbdc444b6e94b8588fb1842c2a96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1883233179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,8 +1730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d71a18de0478ec44c839cce6a462664f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
-  timeout: 5
   prefabsToSpawn:
   - {fileID: 632375746849777152, guid: bf1f3697f76b73b47b4069cfe7b97ff9, type: 3}
   - {fileID: 6203777137737330569, guid: 6dff3a61cfd7fba488af4c10e2d2d9a9, type: 3}
@@ -1779,7 +1801,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.6
+  orthographic size: 5.745619
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1803,8 +1825,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141201379}
   m_LocalRotation: {x: 0.0033026764, y: -0, z: -0, w: 0.9999946}
-  m_LocalPosition: {x: 0, y: -0.47, z: -20}
-  m_LocalScale: {x: 2.2625, y: 0.9125, z: 1}
+  m_LocalPosition: {x: -0.07, y: -0.47, z: -20}
+  m_LocalScale: {x: 3.8745313, y: 0.9125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

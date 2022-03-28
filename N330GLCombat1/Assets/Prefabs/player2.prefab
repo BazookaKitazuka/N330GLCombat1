@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 8989112871174524738}
   m_Layer: 0
   m_Name: player2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,7 +130,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14811891, y: -1.1806049}
+  m_Offset: {x: -0.2523452, y: 0.1393671}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -141,7 +141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7512994, y: 9.769617}
+  m_Size: {x: 4.627328, y: 12.409561}
   m_EdgeRadius: 0
 --- !u!50 &2314878306632135869
 Rigidbody2D:
@@ -205,6 +205,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 1ff4b867-2371-48dd-bb55-7ac79ebcf4c9
     m_ActionName: Player2/Jump[/Keyboard/upArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9721089b-8a92-442c-abb4-e0acd9df01a8
+    m_ActionName: Player/Pickup[/Keyboard/q]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: de4ffc16-d4b3-4565-9380-ee94a4c985cd
+    m_ActionName: Player/Attack[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e84189fd-d791-4601-94df-3f0db1718bfd
+    m_ActionName: Player2/Pickup[/Keyboard/slash]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5d1b5d41-7c02-495d-aeba-860e50f109c3
+    m_ActionName: Player2/Attack[/Keyboard/period]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard2
   m_DefaultActionMap: Player
