@@ -21,7 +21,7 @@ public class Player2 : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
-
+    private Animator animator;
 
     private void Awake()
     {
@@ -29,6 +29,7 @@ public class Player2 : MonoBehaviour
         controls = new PlayerController();
         controls.Enable();
 
+        animator = this.GetComponent<Animator>();
 
         controls.Player2.Movement.performed += context =>
         {
@@ -82,5 +83,9 @@ public class Player2 : MonoBehaviour
     private void OnDisable()
     {
         controls.Disable();
+    }
+
+    void Update() {
+        animator.SetFloat("Run", Mathf.Abs(playerRB.velocity.x));
     }
 }
