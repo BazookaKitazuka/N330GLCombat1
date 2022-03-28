@@ -29,7 +29,7 @@ public class playerMovement : MonoBehaviour
     public Transform itemDetect;
     public Transform weaponSlot;
     public float rayDist;
-    private bool grabed = false;
+    private bool inHand = false;
     private void Awake()
     
     {
@@ -87,22 +87,22 @@ public class playerMovement : MonoBehaviour
     }
     void pickUp()
     {
-        if(grabed)
-        {
+        
+        
             RaycastHit2D itemCheck = Physics2D.Raycast(itemDetect.position, transform.localScale, rayDist);
             if (itemCheck.collider != null && itemCheck.collider.tag == "Item")
             {
                 itemCheck.collider.gameObject.transform.parent = weaponSlot;
                 itemCheck.collider.gameObject.transform.position = weaponSlot.position;
-                itemCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                itemCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
 
 
             }
-        }
+        
 
     }
     // checks if player has taken damage
-      void TakeDamage(int damage)
+       public void TakeDamage(int damage)
     {
 
         currentHealth -= damage;

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-   
+    
     public float moveSpeed = 0.05f;
-    public int timeout = 10;
+    public int timeout = 5;
     public Transform groundCheck;
     public LayerMask groundLayer;
     bool isGrounded;
@@ -23,11 +23,12 @@ public class Weapon : MonoBehaviour
     IEnumerator Destroy()
     {
        
-        if (isGrounded)
-        {
-            yield return new WaitForSeconds(1);
-
+        
+            yield return new WaitForSeconds(timeout);
+        
             Destroy(this.gameObject);
-        }
+     
     }
+    
+  
 }

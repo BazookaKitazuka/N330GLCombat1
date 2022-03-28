@@ -175,8 +175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138e830bd8ce927468bf1cf1629d7bfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponDamage: 0
   moveSpeed: 0
-  timeout: 2
+  timeout: 5
   groundCheck: {fileID: 5194304293623644764}
   groundLayer:
     serializedVersion: 2
