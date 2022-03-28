@@ -92,10 +92,11 @@ public class playerMovement : MonoBehaviour
             RaycastHit2D itemCheck = Physics2D.Raycast(itemDetect.position, transform.localScale, rayDist);
             if (itemCheck.collider != null && itemCheck.collider.tag == "Item")
             {
+            if (Input.GetKey(KeyCode.Q)){
                 itemCheck.collider.gameObject.transform.parent = weaponSlot;
                 itemCheck.collider.gameObject.transform.position = weaponSlot.position;
                 itemCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-
+            }
 
             }
         

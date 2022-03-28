@@ -21,6 +21,10 @@ public class Player2 : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
+    public Transform itemDetect;
+    public Transform weaponSlot;
+    public float rayDist;
+    private bool inHand = false;
     private Animator animator;
 
     private void Awake()
@@ -75,6 +79,25 @@ public class Player2 : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+    //picks up items
+    void pickUp()
+    {
+
+
+        RaycastHit2D itemCheck = Physics2D.Raycast(itemDetect.position, transform.localScale, rayDist);
+        if (itemCheck.collider != null && itemCheck.collider.tag == "Item")
+        {
+            if (Input.GetKey(KeyCode.Period))
+            {
+                itemCheck.collider.gameObject.transform.parent = weaponSlot;
+                itemCheck.collider.gameObject.transform.position = weaponSlot.position;
+                itemCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+            }
+
+        }
+
+
+    }
 
     private void OnEnable()
     {
@@ -87,5 +110,6 @@ public class Player2 : MonoBehaviour
 
     void Update() {
         animator.SetFloat("Run", Mathf.Abs(playerRB.velocity.x));
+        pickUp();
     }
 }

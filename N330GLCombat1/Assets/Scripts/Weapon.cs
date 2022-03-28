@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     
     public float moveSpeed = 0.05f;
-    public int timeout = 5;
+    private int timeout = 5;
     public Transform groundCheck;
     public LayerMask groundLayer;
     bool isGrounded;
