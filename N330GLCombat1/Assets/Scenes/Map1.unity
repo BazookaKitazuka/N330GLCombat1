@@ -138,7 +138,7 @@ Animator:
   m_GameObject: {fileID: 135498145}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dc8d3d2a9c9757744af7e150560bc1af, type: 2}
+  m_Controller: {fileID: 9100000, guid: c0d5676687b2a4380a82504d8babc474, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -591,30 +591,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &499678992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7072898488244045210, guid: 7bb4ca514845641a5ac8a14c4936fc96, type: 3}
-  m_PrefabInstance: {fileID: 1049568252}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &499678999
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499678992}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c0d5676687b2a4380a82504d8babc474, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &600147106
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1133, y: -77.76111}
+  m_AnchoredPosition: {x: 975, y: -77.76111}
   m_SizeDelta: {x: 191.9728, y: 75.3559}
   m_Pivot: {x: 0.49999997, y: 0.47252303}
 --- !u!114 &652867857
@@ -1095,7 +1071,7 @@ PrefabInstance:
     - target: {fileID: 8989112871174524738, guid: 7bb4ca514845641a5ac8a14c4936fc96, type: 3}
       propertyPath: animator
       value: 
-      objectReference: {fileID: 499678999}
+      objectReference: {fileID: 0}
     - target: {fileID: 8989112871174524738, guid: 7bb4ca514845641a5ac8a14c4936fc96, type: 3}
       propertyPath: healthBar
       value: 

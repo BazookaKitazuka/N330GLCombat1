@@ -109,7 +109,9 @@ public class Player2 : MonoBehaviour
     }
 
     void Update() {
+
         animator.SetFloat("Run", Mathf.Abs(playerRB.velocity.x));
         pickUp();
+        
     }
 }
