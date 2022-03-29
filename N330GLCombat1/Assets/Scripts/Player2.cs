@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class Player2 : MonoBehaviour
 {
@@ -110,12 +109,9 @@ public class Player2 : MonoBehaviour
     }
 
     void Update() {
+
         animator.SetFloat("Run", Mathf.Abs(playerRB.velocity.x));
         pickUp();
-        if (currentHealth <= 0)
-        {
-            SceneManager.LoadScene("Player2Win");
-
-        }
+        
     }
 }
