@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -50,8 +51,14 @@ public class playerMovement : MonoBehaviour
     }
     private void Update()
     {
-        pickUp(); 
-     
+        pickUp();
+
+
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene("Player2Win");
+
+        }
     }
 
 
