@@ -54,6 +54,7 @@ public class ColorChanger : MonoBehaviour
                 changeColorGreen = true;
                 yield return new WaitForSeconds(switchRed);
             }
+            // color damage
             if(changeColorYellow == true && player1.transform.position != lastPos)
             {
                 Damage = 7;
