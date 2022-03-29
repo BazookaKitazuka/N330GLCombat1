@@ -110,7 +110,7 @@ public class Player2 : MonoBehaviour
     }
 
     void Update() {
-
+        // winer
         animator.SetFloat("Run", Mathf.Abs(playerRB.velocity.x));
         pickUp();
         if (currentHealth <= 0)
