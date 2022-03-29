@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
    public void playGame()
    {
        //Change Game from title to game
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Map1");
    }
 
     public void quitGame()
