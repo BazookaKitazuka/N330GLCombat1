@@ -56,7 +56,7 @@ public class playerMovement : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene()
+            SceneManager.LoadScene("Player2Win");
 
         }
     }

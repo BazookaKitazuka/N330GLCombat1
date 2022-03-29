@@ -114,7 +114,7 @@ public class Player2 : MonoBehaviour
         pickUp();
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene();
+            SceneManager.LoadScene("Player2Win");
 
         }
     }
