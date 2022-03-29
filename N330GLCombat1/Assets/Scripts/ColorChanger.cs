@@ -10,6 +10,10 @@ public class ColorChanger : MonoBehaviour
     public float switchYellow = 3.0f;
     private bool repeat = true;
     public float alpha = 0.2f;
+    public GameObject player1;
+    public GameObject player2;
+    [SerializeField] int Damage;
+    Vector3  lastPos;
     // Use this for initialization
     void Start()
     {
@@ -50,7 +54,19 @@ public class ColorChanger : MonoBehaviour
                 changeColorGreen = true;
                 yield return new WaitForSeconds(switchRed);
             }
+            // color damage
+            if(changeColorYellow == true && player1.transform.position != lastPos)
+            {
+                Damage = 7;
+                gameObject.GetComponent<playerMovement>().TakeDamage(Damage);
+            }
+            if (changeColorYellow == true && player2.transform.position != lastPos)
+            {
+                Damage = 7;
+                gameObject.GetComponent<Player2>().TakeDamage(Damage);
+            }
         }
+
     }
  
 }

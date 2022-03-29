@@ -34,6 +34,7 @@ public class playerMovement : MonoBehaviour
     private void Awake()
     
     {
+
         // player 1 controlls3
         controls = new PlayerController();
         controls.Enable();

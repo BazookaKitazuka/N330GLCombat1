@@ -1670,6 +1670,9 @@ MonoBehaviour:
   changeColorRed: 0
   switchYellow: 3
   alpha: 0.5
+  player1: {fileID: 1876828188}
+  player2: {fileID: 135498145}
+  Damage: 7
 --- !u!1 &1888862983
 GameObject:
   m_ObjectHideFlags: 0
