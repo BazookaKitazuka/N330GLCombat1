@@ -18,7 +18,7 @@ public class Weapons : MonoBehaviour
     {
         while (true)
         {
-            float randomTime = Random.Range(5f, 10f);
+            float randomTime = Random.Range(15f, 25f);
             float randomPosition = Random.Range(-8f, 10f);
             int randomPrefab = Random.Range(0, prefabsToSpawn.Count);
 

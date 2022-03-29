@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Item
+  - Player2
   layers:
   - Default
   - TransparentFX

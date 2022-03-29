@@ -123,6 +123,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &135498145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7072898488244045210, guid: 7bb4ca514845641a5ac8a14c4936fc96, type: 3}
+  m_PrefabInstance: {fileID: 1049568252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &135498152
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135498145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc8d3d2a9c9757744af7e150560bc1af, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &199117317
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 931, y: -77.76111}
+  m_AnchoredPosition: {x: 1133, y: -77.76111}
   m_SizeDelta: {x: 191.9728, y: 75.3559}
   m_Pivot: {x: 0.49999997, y: 0.47252303}
 --- !u!114 &652867857
@@ -1167,6 +1191,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1301895823, guid: 75f8a9d9f8a1444cf95ab0ea30dc360e, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907134855396152494, guid: 75f8a9d9f8a1444cf95ab0ea30dc360e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.52
+      objectReference: {fileID: 0}
     - target: {fileID: 5513434090874730705, guid: 75f8a9d9f8a1444cf95ab0ea30dc360e, type: 3}
       propertyPath: m_RootOrder
       value: 3

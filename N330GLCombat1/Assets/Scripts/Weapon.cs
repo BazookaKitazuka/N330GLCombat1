@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-   
+    
     public float moveSpeed = 0.05f;
-    public int timeout = 10;
+    private int timeout = 15;
     public Transform groundCheck;
     public LayerMask groundLayer;
     bool isGrounded;
@@ -15,19 +15,26 @@ public class Weapon : MonoBehaviour
     {
         StartCoroutine(Destroy());
     }
-   
-    private void FixedUpdate()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 4f, groundLayer);
-    }
-    IEnumerator Destroy()
-    {
-       
-        if (isGrounded)
+        if(collision.tag == "floor")
         {
-            yield return new WaitForSeconds(1);
-
-            Destroy(this.gameObject);
+            isGrounded = true;
         }
     }
+
+    
+    IEnumerator Destroy()
+    {
+        
+        
+
+            yield return new WaitForSeconds(timeout);
+            Destroy(this.gameObject);
+        
+            
+     
+    }
+    
+  
 }
