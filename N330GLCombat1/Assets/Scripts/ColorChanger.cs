@@ -57,6 +57,12 @@ public class ColorChanger : MonoBehaviour
             if(changeColorYellow == true && player1.transform.position != lastPos)
             {
                 Damage = 7;
+                gameObject.GetComponent<playerMovement>().TakeDamage(Damage);
+            }
+            if (changeColorYellow == true && player2.transform.position != lastPos)
+            {
+                Damage = 7;
+                gameObject.GetComponent<Player2>().TakeDamage(Damage);
             }
         }
 
