@@ -6,7 +6,7 @@ public class Weapon : MonoBehaviour
 {
     
     public float moveSpeed = 0.05f;
-    private int timeout = 5;
+    private int timeout = 15;
     public Transform groundCheck;
     public LayerMask groundLayer;
     bool isGrounded;
@@ -15,18 +15,24 @@ public class Weapon : MonoBehaviour
     {
         StartCoroutine(Destroy());
     }
-   
-    private void FixedUpdate()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 4f, groundLayer);
+        if(collision.tag == "floor")
+        {
+            isGrounded = true;
+        }
     }
+
+    
     IEnumerator Destroy()
     {
-       
         
+        
+
             yield return new WaitForSeconds(timeout);
-        
             Destroy(this.gameObject);
+        
+            
      
     }
     

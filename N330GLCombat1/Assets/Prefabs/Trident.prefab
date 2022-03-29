@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 1959886726818036345}
   - component: {fileID: 867485375119634420}
   - component: {fileID: 8556290102233922751}
+  - component: {fileID: 8478457506841115512}
   m_Layer: 0
   m_Name: Trident
   m_TagString: Item
@@ -177,7 +178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  timeout: 5
   groundCheck: {fileID: 5194304293623644764}
   groundLayer:
     serializedVersion: 2
@@ -249,3 +249,17 @@ PolygonCollider2D:
       - {x: -0.103497446, y: 0.90081966}
       - {x: -0.018374361, y: -1.5987185}
       - {x: 0.22999999, y: 0.81}
+--- !u!114 &8478457506841115512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6255187323467217314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fffc32f111dda17438e143474dda84d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wp: {fileID: 867485375119634420}
+  Damage: 10

@@ -73,7 +73,7 @@ public class Player2 : MonoBehaviour
         }
     }
     // allows player to take damage
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
 
         currentHealth -= damage;

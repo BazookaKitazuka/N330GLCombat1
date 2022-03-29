@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1212003616498138468}
   - component: {fileID: 5759418360568791892}
   - component: {fileID: 8455709358691862535}
+  - component: {fileID: 2156851670514483513}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Item
@@ -147,7 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
-  timeout: 5
   groundCheck: {fileID: 6946961729708899206}
   groundLayer:
     serializedVersion: 2
@@ -211,6 +211,20 @@ PolygonCollider2D:
       - {x: -0.123208195, y: 1.5580547}
       - {x: 0, y: -3.2837217}
       - {x: 0, y: 1.56}
+--- !u!114 &2156851670514483513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632375746849777152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fffc32f111dda17438e143474dda84d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wp: {fileID: 5759418360568791892}
+  Damage: 10
 --- !u!1 &6593729832297376012
 GameObject:
   m_ObjectHideFlags: 0

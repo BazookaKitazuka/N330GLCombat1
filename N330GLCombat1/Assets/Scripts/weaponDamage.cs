@@ -12,6 +12,10 @@ public class weaponDamage : MonoBehaviour
         {
             collision.gameObject.GetComponent<playerMovement>().TakeDamage(Damage);
         }
+        if (collision.tag == "Player2")
+        {
+            collision.gameObject.GetComponent<Player2>().TakeDamage(Damage);
+        }
     }
 
 }
